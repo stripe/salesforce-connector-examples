@@ -1,0 +1,63 @@
+<template>
+    <article class="slds-card">
+        <!-- Header -->
+        <div class="slds-card__header slds-grid">
+            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                <div class="slds-media__figure">
+                    <div class="stripe-icon_container">
+                        <img src={iconUrl} alt="Stripe Icon" class="slds-icon_small"/>
+                    </div>
+                </div>
+                <div class="slds-media__body">
+                    <h2 class="slds-card__header-title">
+                        Stripe Checkout Link
+                    </h2>
+                </div>
+            </header>
+        </div>
+        <!-- /Header -->
+        <!-- Component Content -->
+        <div class="slds-card__body slds-card__body_inner slds-is-relative">
+            <!-- Loading State -->
+            <template if:true={loading}>
+                <lightning-spinner title="Loading"></lightning-spinner>
+            </template>
+            <!-- /Loading State -->
+            <template if:false={linkGenerated}>
+                <button class="slds-button slds-button_neutral slds-button_stretch" onclick={generateLink} disabled={generateButtonDisabled}>
+                    Generate Checkout Link
+                </button>
+            </template>
+            <template if:true={linkGenerated}>
+                <!-- Display Link -->
+                <div class="slds-grid">
+                    <div class="slds-col slds-grow-none slds-m-right_x-small">
+                        <div class="stripe-button_container slds-is-relative">
+                            <lightning-button-icon 
+                                icon-name="utility:copy" 
+                                size="small" 
+                                variant="container" 
+                                onclick={copyLink} 
+                                alternative-text="Copy Link to Clipboard"
+                                disabled={copyButtonDisabled}>
+                            </lightning-button-icon>
+                            <div class="stripe-button_overlay slds-is-absolute slds-hide" onanimationend={resetCopyOverlay}>
+                                <lightning-icon icon-name="utility:check" size="x-small" alternative-text="Copied to Clipboard"></lightning-icon>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slds-col">
+                        <div class="slds-form-element">
+                            <span class="slds-form-element__label slds-assistive-text">Checkout Link</span>
+                            <div class="slds-form-element__control">
+                                <div class="slds-form-element__static">{checkoutLink}</div>
+                            </div>
+                        </div>
+                        <input type="text" class="stripe-checkout-link stripe-input_hidden slds-is-fixed" value={checkoutLink} readonly/>
+                    </div>
+                </div>
+            </template>
+        </div>
+        <!-- /Component Content -->
+    </article>
+</template>

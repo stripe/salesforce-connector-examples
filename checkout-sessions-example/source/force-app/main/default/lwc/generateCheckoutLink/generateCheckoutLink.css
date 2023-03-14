@@ -1,0 +1,43 @@
+.slds-card__header .stripe-icon_container {
+    border-radius: var(--borderRadiusMedium, .25rem);
+    overflow: hidden;
+}
+
+.stripe-button_overlay {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--borderRadiusMedium, .25rem);
+    overflow: hidden;
+}
+
+.stripe-button_container .stripe-button_overlay.slds-hide {
+    animation: none;
+}
+
+.stripe-button_container .stripe-button_overlay {
+    animation: fadeOut var(--durationQuickly, .1s) linear 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.stripe-input_hidden {
+    top: -9999px;
+    left: -9999px;
+    opacity: 0; 
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
