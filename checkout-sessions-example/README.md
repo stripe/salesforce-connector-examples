@@ -11,6 +11,8 @@ fire after the Stripe Event has been created from the webhook event. The trigger
 
 # Configuration
 
+To configure this example, both the connector and the order detail page needs to be configured.
+
 ## Configurating the Connector
 
 1. Go to the Stripe Universal Connector Setup tab.
