@@ -6,8 +6,6 @@ This sample shows how to create a Stripe Invoice from an opportunity in Salesfor
 Add a Generate Invoice Link
 ![Invoice](materials/pics/invoice.png)
 
-![Opportunity Products](materials/pics/opportunity.png)
-
 Return Invoice Details
 ![Invoice Deatils](materials/pics/returninvoice.png)
 
