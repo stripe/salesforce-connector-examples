@@ -68,12 +68,3 @@ Sign up to [stay updated with the connecor](https://stripe.com/docs/plugins/stri
 ## Author(s)
 
 - [@millin-stripe](https://github.com/millin-stripe)
-
-
-## Contributors
-
-<a href="https://github.com/stripe-samples/subscription-use-cases/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=stripe-samples/subscription-use-cases" />
-</a>
-
-Made with [contrib.rocks](https://contrib.rocks).
