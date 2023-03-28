@@ -18,7 +18,7 @@ More information about this connector can be found on [the docs page for the con
 You can now start developing your Salesforce application using your new Dev instance.
     * Download the Connector installation package. You can obtain the installation package [here](https://stripe.com/docs/plugins/stripe-connector-for-salesforce/overview) by clicking register. 
 2. Review these resources to help you get started:
-    * Gain an understanding of the connector and basic usage through this [instructional video.] (https://www.youtube.com/watch?v=DJnqOAKrw44)
+    * Gain an understanding of the connector and basic usage through this [instructional video.](https://www.youtube.com/watch?v=DJnqOAKrw44)
     * Watch this [video tutorial](https://drive.google.com/file/d/1C_Gc6-bU1Z6-HR8YBHL7vgzeAbQdYdlU/view?usp=share_link) to guide you through the installation process.
     * Use the [Installation guide](https://docs.google.com/document/d/1CY_rppxQaN-k9mTfm-Tqy8wnWGfXDWVEFNCBri_SjuQ/edit?usp=share_link) to Install the Connector. 
     * Explore our [API documentation](https://docs.google.com/document/d/1F2BHn67qtkOg01M4Ta_sFjMVTbh6soUlRIYyznu4Fr4/edit?usp=sharing) for a deeper understanding of the available classes, invocations, and parameters.
