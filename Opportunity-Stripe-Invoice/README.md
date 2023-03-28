@@ -28,7 +28,8 @@ configuration will vary depending on your salesforce environment._
 
 To download a Salesforce project from GitHub and deploy it into a Dev or Scratch org, follow these steps:
 
-1. Clone the GitHub repository that contains the Salesforce project you want to download onto your local machine using the git clone command. ```sh
+1. Clone the GitHub repository that contains the Salesforce project you want to download onto your local machine using the git clone command. 
+```sh
 git clone https://github.com/stripe/salesforce-connector-examples.git
 ```
 
