@@ -1,18 +1,22 @@
 # Set up Opportunity Stripe Invoice
 
+## Description
 Enable sales representatives to create a Stripe invoice from an Opportunity using a Screen Flow. Here is an example Salesforce Flow leveraging the Universal Connector that enables a sales rep to create a Stripe invoice from an Opportunity
 
+## Overview
 This sample shows how to create a Stripe Invoice from an opportunity in Salesforce.
 [Overview Video to Create](https://drive.google.com/file/d/1PTeeIkWmxrhmB2-bu27PJIU27HTuYA-Z/view?usp=share_link)
 
-Add a Generate Invoice Link
+Add a Generate Invoice Button to the Opportunity to create a Stripe Invoice based on the opportunity line items. 
 ![Invoice](materials/pics/invoice.png)
 
-Return Invoice Details
+Return Invoice Details from Stripe as an example on how to send and fetch data from Stripe. 
 ![Invoice Deatils](materials/pics/returninvoice.png)
 
-Stripe Invoice 
+Stripe Invoice example matching the opportunity. 
 ![Stripe Invoice](materials/pics/stripeinvoice.png)
+
+
 ## Run the sample locally
 
 _This example can be installed locally
