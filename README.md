@@ -25,3 +25,4 @@ You can now start developing your Salesforce application using your new Dev inst
     * Access [additional documentation](https://docs.google.com/document/d/1ntKsUIdYLHNbrYSXQOr2wADMPd6Mg7AeSXU7t6oXpWI/edit?usp=sharing) covering various classes and components of our connector.
     * [Practice synchronizing customer data](https://drive.google.com/file/d/1hGvyfiIeVS5--BlKpAVb_6RgE5M22uxh/view?usp=share_link) and gain practical experience on how to use webhooks and events with the connector.
     * [Practice adding Stripe Invoicing to Salesforce](https://drive.google.com/file/d/1PTeeIkWmxrhmB2-bu27PJIU27HTuYA-Z/view?usp=share_link) opportunities and gain practical experience on how to call out to stripe during a flow. 
+   * [Add Metadata to a Stripe Customer](https://drive.google.com/file/d/1Q8JI_1bM4edp3HOXhmv_Yg_3Sb_SiOsH/view?usp=share_link) and gain practical experience on how to set metadata on Stripe Objects and work with subclasses and parameters. 
