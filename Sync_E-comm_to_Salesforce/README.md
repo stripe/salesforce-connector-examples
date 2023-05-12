@@ -1,18 +1,64 @@
-# Salesforce DX Project: Next Steps
+# Set up Opportunity Stripe Invoice
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+## Description
+This Example facilitates the synchronization of data from an independent E-commerce platform to Salesforce. It contains custom objects and flows that represent Stripe Subscriptions, Invoices, and Customers.
 
-## How Do You Plan to Deploy Your Changes?
+This example demonstrates how to synchronize data from Stripe to Salesforce utilizing webhooks and flows. The following video provides a comprehensive demonstration of the functionalities that this example code offers. 
+[Overview Video to Create]([https://drive.google.com/file/d/1PTeeIkWmxrhmB2-bu27PJIU27HTuYA-Z/view?usp=share_link](https://youtu.be/OdwSC-9Xpnc))
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
 
-## Configure Your Salesforce DX Project
+## Run the sample locally
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+_This example can be installed locally
+configuration will vary depending on your salesforce environment._
 
-## Read All About It
+### Requirements
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+- **A Stripe account**: You can sign up for a Stripe account here: https://dashboard.stripe.com/register
+- **A Salesforce Org**: You can register for a Salesforce account here: https://developer.salesforce.com
+- **Stripe Universal Connector v1.7+ [Installed and Configured](https://docs.google.com/document/d/1CY_rppxQaN-k9mTfm-Tqy8wnWGfXDWVEFNCBri_SjuQ/edit?usp=share_link)**: Register for the connecrtor here: https://stripe.com/docs/plugins/stripe-connector-for-salesforce/overview
+
+### Installing the example
+
+To download a Salesforce project from GitHub and deploy it into a Dev or Scratch org, follow these steps:
+
+1. Clone the GitHub repository that contains the Salesforce project you want to download onto your local machine using the git clone command. 
+```sh
+git clone https://github.com/stripe/salesforce-connector-examples.git
+```
+
+2. Once the repository is cloned, navigate to the root directory of the example in the command line interface.
+```sh
+mkdir salesforce-connector-examples
+cd salesforce-connector-examples
+```
+
+3. Create a new Salesforce project in your Dev or Scratch org using the Salesforce CLI command sfdx force:project:create. 
+For example:
+```sh
+sfdx force:project:create --projectname <project-name>
+```
+4. Use the Salesforce CLI command sfdx force:source:retrieve to retrieve the metadata for the Salesforce project from the GitHub repository into your local machine. For example:
+```sh
+sfdx force:source:retrieve --manifest pattoGithubdownload/salesforce-connector-examples/Sync_E-comm_to_Salesforce/package.json
+```
+5. Once the metadata is retrieved, deploy it to your Dev or Scratch org using the Salesforce CLI command sfdx force:source:push. 
+For example:
+```sh
+sfdx force:source:push
+```
+6. Verify that the Salesforce project is deployed correctly by checking the Dev or Scratch org.
+Note: Before deploying the Salesforce project to your Dev or Scratch org, make sure that you have the required permissions and dependencies installed. You may also need to modify the package.xml file to retrieve only the necessary metadata components.
+
+
+## Get support
+If you found a bug or want to suggest a new [feature/use case/sample], please [file an issue](../../issues).
+
+If you have questions, comments, or need help with code, we're here to help:
+- by [email](mailto:sfuniversalconnector@stripe.com)
+
+Sign up to [stay updated with the connecor](https://stripe.com/docs/plugins/stripe-connector-for-salesforce/overview).
+
+## Author(s)
+
+- [@millin-stripe](https://github.com/millin-stripe)
