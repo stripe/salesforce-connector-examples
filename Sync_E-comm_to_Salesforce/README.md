@@ -4,7 +4,7 @@
 This Example facilitates the synchronization of data from an independent E-commerce platform to Salesforce. It contains custom objects and flows that represent Stripe Subscriptions, Invoices, and Customers.
 
 This example demonstrates how to synchronize data from Stripe to Salesforce utilizing webhooks and flows. The following video provides a comprehensive demonstration of the functionalities that this example code offers. 
-[Overview Video to Create]([https://youtu.be/OdwSC-9Xpnc])
+[Overview Video to Create](https://youtu.be/OdwSC-9Xpnc)
 
 
 ## Run the sample locally
