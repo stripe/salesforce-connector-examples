@@ -1,4 +1,4 @@
-# Set up Opportunity Stripe Invoice
+# Synchronization of data from an independent E-commerce platform to Salesforce
 
 ## Description
 This Example facilitates the synchronization of data from an independent E-commerce platform to Salesforce. It contains custom objects and flows that represent Stripe Subscriptions, Invoices, and Customers.
