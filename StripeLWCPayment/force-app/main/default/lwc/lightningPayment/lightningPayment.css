@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.total-cost {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.iframe-container {
+    flex: 1;
+    height: "500px";
+    width: "100%";
+    margin-left: auto;
+}
+
+.iframe-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}

@@ -1,0 +1,14 @@
+<apex:page>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!--Include Stripe js File in order to use Stripe Elements.--> 
+<script type="text/javascript" src="https://js.stripe.com/v3/"></script> 
+   <!--Include Javascript File(Static Resource)-->
+   <apex:includeScript value="{!$Resource.StripePaymentElement}" loadOnReady="true"/>
+     <apex:form id="cardForm">
+        <apex:pageBlock title="Stripe Payment Element Form">
+          <div id="payment-element" />    <!-- Add Card Details here-->
+          <div id="payment-element-Errors"/>    <!--display card errors here -->
+<apex:commandButton value="Pay Now" onclick="validateCard();return false;" styleClass="btnClass" />
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
