@@ -54,6 +54,7 @@ git clone https://github.com/stripe/salesforce-connector-examples.git
 ```sh
 mkdir salesforce-connector-examples
 cd salesforce-connector-examples
+cd StripeLWCPayment
 ```
 
 3. Authenticate into your Salesforce Instance
