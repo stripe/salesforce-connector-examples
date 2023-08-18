@@ -39,7 +39,7 @@ configuration will vary depending on your salesforce environment._
 
 - **A Stripe account**: You can sign up for a Stripe account here: https://dashboard.stripe.com/register
 - **A Salesforce Org**: You can register for a Salesforce account here: https://developer.salesforce.com
-- **Stripe Universal Connector v1.7+ [Installed and Configured](https://docs.google.com/document/d/1CY_rppxQaN-k9mTfm-Tqy8wnWGfXDWVEFNCBri_SjuQ/edit?usp=share_link)**: Register for the connecrtor here: https://stripe.com/docs/plugins/stripe-connector-for-salesforce/overview
+- **Stripe Universal Connector v1.9+ [Installed and Configured](https://docs.google.com/document/d/1CY_rppxQaN-k9mTfm-Tqy8wnWGfXDWVEFNCBri_SjuQ/edit?usp=share_link)**: Register for the connecrtor here: https://stripe.com/docs/plugins/stripe-connector-for-salesforce/overview
 
 ### Installing the example
 
