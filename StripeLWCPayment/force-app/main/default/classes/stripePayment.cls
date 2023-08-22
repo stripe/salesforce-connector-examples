@@ -13,15 +13,14 @@ public class stripePayment {
         // This assumes you already have the Stripe Account ID and will pass it in as a parameter  
         // Alternately, you could use a SOQL query to obtain the Stripe Account ID as per previous examples  
         parameters.accountId = StripeAccountID;  
-  
+        parameters.connectAccount = onBehalfOf;
         // Prepare the request body  
         List<String> postPaymentIntentParameters = new List<String>{  
             'amount=' + amount, // Pass in the amount to be charged for this payment intent in the minimum currency unit (for example, cents for USD)  
             'currency=' + stripecurrency, // Pass in the currency for this payment intent (for example, 'usd' for USD)  
             'customer=' + customerId, // Pass in customer to payment intent
             'automatic_payment_methods[enabled]=true', //Turning on automatic payment methods
-            'metadata[order_id]=' + orderID,
-            'on_behalf_of=' + onBehalfOf
+            'metadata[order_id]=' + orderID
         };  
   
         parameters.requestBody = String.join(postPaymentIntentParameters, '&');  
