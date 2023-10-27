@@ -1,0 +1,21 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false">
+    <script type="text/javascript" src="https://js.stripe.com/v3/"></script> 
+    <apex:stylesheet value="{!$Resource.StripePaymentElementCSS}" />
+    <!--Include Javascript File(Static Resource)-->
+    <apex:includeScript value="{!$Resource.StripePaymentElement}" loadOnReady="true"/>
+    <apex:form id="cardForm">
+        <apex:pageBlock title="Stripe Payment Element Form">
+            <div id="link-authentication-element">
+                <div id="payment-element"></div>    <!-- Add Card Details here-->
+                <div id="payment-element-Errors"></div>    <!--display card errors here -->
+                <apex:outputPanel id="submitContainer" styleClass="btnClass" onclick="validateCard();return false;">
+                    <div id="submitButton">
+                        <div class="spinner hidden" id="spinner"></div>
+                        <span id="button-text">Pay now</span>
+                    </div>
+                </apex:outputPanel>
+                <div id="payment-message" class="hidden"></div>
+            </div>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Demo_Payments</fullName>
+    <columns>NAME</columns>
+    <filterScope>Mine</filterScope>
+    <label>Demo Payments</label>
+</ListView>
