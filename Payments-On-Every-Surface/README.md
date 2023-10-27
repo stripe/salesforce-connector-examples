@@ -1,18 +1,48 @@
-# Salesforce DX Project: Next Steps
+# Example Of Using Any Stripe Payment Type/Method On Any Salesforce Surface using Flow
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+## Description
+An Example to show how to build flows to accept (Terminal, Payment Elements, Checkout, Payment Links, Invoices...) Payments using Stripe inside Salesforce. 
+Could help build 
+- Field Service Integrations
+- Custom B2B Payments
+- Custom QtC processes
+- Donations
+- Almost Any Other Payment senario you can dream or build
 
-## How Do You Plan to Deploy Your Changes?
+Demo Video Showing this Example In action. 
+[Video]([https://drive.google.com/file/d/1Q8JI_1bM4edp3HOXhmv_Yg_3Sb_SiOsH/view?usp=share_link](https://youtu.be/V65XTpNRa9Q))
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+## Run the sample on your Org
 
-## Configure Your Salesforce DX Project
+_This example can be installed on your salesforce org
+configuration will vary depending on your salesforce environment._
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+### Requirements
 
-## Read All About It
+- **A Stripe account**: You can sign up for a Stripe account here: https://dashboard.stripe.com/register
+- **A Salesforce Org**: You can register for a Salesforce account here: https://developer.salesforce.com
+- **Stripe For Salesforce Platform Connector [Salesforce AppExhange](https://appexchange.salesforce.com/appxListingDetail?listingId=4dff0f8e-0b10-47c2-a3a3-f3905e7f7927)**
+- **Stripe For Salesforce Platform Installed [Docs](https://site-admin.stripe.com/docs/plugins/stripe-connector-for-salesforce/installation-guide)**
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+### Installing the example
+
+To download a Salesforce project from GitHub and deploy it into a Dev or Scratch org, follow these steps:
+
+1. Clone the GitHub repository that contains the Salesforce project you want to download onto your local machine using the git clone command. 
+```sh
+git clone https://github.com/stripe/salesforce-connector-examples.git
+```
+
+2. Once the repository is cloned, navigate to the root directory of the example in the command line interface.
+```sh
+cd Payments-On-Every-Surface
+```
+
+3. Deploy the project to your salesforce org:
+```sh
+sf project retrieve start --target-org <YOUR_ORG>
+```
+
+## Author(s)
+
+- [@millin-stripe](https://github.com/millin-stripe)
