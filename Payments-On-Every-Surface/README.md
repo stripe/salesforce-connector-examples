@@ -10,7 +10,7 @@ Could help build
 - Almost Any Other Payment senario you can dream or build
 
 Demo Video Showing this Example In action. 
-[Video]([https://drive.google.com/file/d/1Q8JI_1bM4edp3HOXhmv_Yg_3Sb_SiOsH/view?usp=share_link](https://youtu.be/V65XTpNRa9Q))
+[![Demo](https://img.youtube.com/vi/V65XTpNRa9Q/0.jpg)](https://youtu.be/V65XTpNRa9Q)
 
 ## Run the sample on your Org
 
