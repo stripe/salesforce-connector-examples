@@ -913,7 +913,6 @@
             <dataType>String</dataType>
             <fieldText>Order ID</fieldText>
             <fieldType>InputField</fieldType>
-            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
         </fields>
         <nextOrFinishButtonLabel>Generate Checkout</nextOrFinishButtonLabel>
@@ -936,7 +935,6 @@
             <dataType>String</dataType>
             <fieldText>Order ID</fieldText>
             <fieldType>InputField</fieldType>
-            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
         </fields>
         <fields>
@@ -948,8 +946,6 @@
             <fieldText>Stripe Customer ID</fieldText>
             <fieldType>InputField</fieldType>
             <helpText>&lt;p&gt;From The Stripe Dashboard create a customer or select a customer and copy the customer ID.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://customer-momentum-4913-dev-ed.scratch.file.force.com/sfc/servlet.shepherd/version/download/068O9000000AIOf?asPdf=false&amp;amp;operationContext=CHATTER&quot; alt=&quot;Screenshot 2023-10-04 at 1.07.05 PM.png&quot;&gt;&lt;/p&gt;</helpText>
-            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
-            <isRequired>true</isRequired>
         </fields>
         <nextOrFinishButtonLabel>Generate Invoice</nextOrFinishButtonLabel>
         <showFooter>true</showFooter>
@@ -973,7 +969,6 @@
                     <elementReference>Finalize_Invoice.hostedInvoiceUrl</elementReference>
                 </value>
             </inputParameters>
-            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
             <storeOutputAutomatically>true</storeOutputAutomatically>
         </fields>
@@ -999,7 +994,6 @@
                     <elementReference>checkoutURL</elementReference>
                 </value>
             </inputParameters>
-            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
             <storeOutputAutomatically>true</storeOutputAutomatically>
         </fields>
@@ -1025,7 +1019,6 @@
                     <elementReference>Enter_Payment_Link_URL</elementReference>
                 </value>
             </inputParameters>
-            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
             <storeOutputAutomatically>true</storeOutputAutomatically>
         </fields>
@@ -1054,7 +1047,6 @@
             <dataType>String</dataType>
             <fieldText>Enter Payment Link URL</fieldText>
             <fieldType>InputField</fieldType>
-            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
         </fields>
         <nextOrFinishButtonLabel>Generate Payment</nextOrFinishButtonLabel>
@@ -1083,7 +1075,6 @@
             <dataType>String</dataType>
             <fieldText>Select Payment Button</fieldText>
             <fieldType>RadioButtons</fieldType>
-            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
         </fields>
         <nextOrFinishButtonLabel>Make Payment</nextOrFinishButtonLabel>
@@ -1106,7 +1097,6 @@
             <dataType>String</dataType>
             <fieldText>OrderID</fieldText>
             <fieldType>InputField</fieldType>
-            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
         </fields>
         <fields>
@@ -1114,7 +1104,6 @@
             <dataType>String</dataType>
             <fieldText>Stripe Public Key</fieldText>
             <fieldType>InputField</fieldType>
-            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
         </fields>
         <fields>
@@ -1125,7 +1114,6 @@
             <dataType>String</dataType>
             <fieldText>Select Theme</fieldText>
             <fieldType>RadioButtons</fieldType>
-            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>false</isRequired>
         </fields>
         <fields>
@@ -1167,7 +1155,6 @@
                     <elementReference>Select_Theme</elementReference>
                 </value>
             </inputParameters>
-            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
             <storeOutputAutomatically>true</storeOutputAutomatically>
         </fields>
@@ -1196,7 +1183,6 @@
             <dataType>String</dataType>
             <fieldText>Terminal Reader ID</fieldText>
             <fieldType>InputField</fieldType>
-            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
         </fields>
         <fields>
@@ -1204,7 +1190,6 @@
             <dataType>String</dataType>
             <fieldText>Order ID</fieldText>
             <fieldType>InputField</fieldType>
-            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
         </fields>
         <nextOrFinishButtonLabel>I have a terminal Connected</nextOrFinishButtonLabel>
