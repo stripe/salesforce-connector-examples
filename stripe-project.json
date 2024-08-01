@@ -3,19 +3,14 @@
   "edition": "Developer",
   "features": ["EnableSetPasswordInApi"],
   "settings": {
-    "orgPreferenceSettings": {
-
-          "networksEnabled": true,
-
-          "s1DesktopEnabled": true,
-
-		  "IsQuoteEnabled":true ,
-
-          "s1EncryptedStoragePref2": false
-
-      },
+    "quoteSettings": {
+      "enableQuote": true
+    },
     "lightningExperienceSettings": {
       "enableS1DesktopEnabled": true
+    },
+    "networkSettings": {
+      "enableNetworksEnabled": true
     },
     "mobileSettings": {
       "enableS1EncryptedStoragePref2": false
