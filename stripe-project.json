@@ -9,9 +9,6 @@
     "lightningExperienceSettings": {
       "enableS1DesktopEnabled": true
     },
-    "networkSettings": {
-      "enableNetworksEnabled": true
-    },
     "mobileSettings": {
       "enableS1EncryptedStoragePref2": false
     }
