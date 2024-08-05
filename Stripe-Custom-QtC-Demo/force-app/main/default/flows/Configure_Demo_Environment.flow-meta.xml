@@ -484,7 +484,7 @@
         <inputAssignments>
             <field>Name</field>
             <value>
-                <stringValue>One Time Item</stringValue>
+                <stringValue>Gold Subscription</stringValue>
             </value>
         </inputAssignments>
         <object>Product2</object>
