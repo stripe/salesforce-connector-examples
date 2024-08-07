@@ -10,6 +10,5 @@
     <tabs>Stripe_Checkout_Demo_Configuration</tabs>
     <tabs>Stripe_QtC_Demo_Configuration</tabs>
     <tabs>Embedded_Checkout_Demo_Configuration</tabs>
-    <tabs>Demo_Configuration</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>
