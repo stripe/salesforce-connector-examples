@@ -637,10 +637,6 @@
         <visible>false</visible>
     </recordTypeVisibilities>
     <tabVisibilities>
-        <tab>Demo_Configuration</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
         <tab>Embedded_Checkout_Demo_Configuration</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
