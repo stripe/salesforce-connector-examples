@@ -592,7 +592,7 @@
     <recordTypeVisibilities>
         <default>true</default>
         <recordType>Account.Business_Account</recordType>
-        true</visible>
+        <visible>true</visible>
     </recordTypeVisibilities>
     <tabVisibilities>
         <tab>Stripe_Checkout_Demo_Configuration</tab>
