@@ -592,11 +592,11 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Account.Business_Account</recordType>
-        <visible>false</visible>
+        <visible>true</visible>
     </recordTypeVisibilities>
     <tabVisibilities>
         <tab>Embedded_Checkout_Demo_Configuration</tab>
-        <visibility>Hidden</visibility>
+        <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>Stripe_Checkout_Demo_Configuration</tab>
