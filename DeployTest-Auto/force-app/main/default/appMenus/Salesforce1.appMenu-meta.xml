@@ -25,14 +25,6 @@
         <type>StandardAppMenuItem</type>
     </appMenuItems>
     <appMenuItems>
-        <name>Stripe_Checkout_Demo_Configuration</name>
-        <type>CustomTab</type>
-    </appMenuItems>
-    <appMenuItems>
-        <name>Stripe_QtC_Demo_Configuration</name>
-        <type>CustomTab</type>
-    </appMenuItems>
-    <appMenuItems>
         <name>People</name>
         <type>StandardAppMenuItem</type>
     </appMenuItems>
