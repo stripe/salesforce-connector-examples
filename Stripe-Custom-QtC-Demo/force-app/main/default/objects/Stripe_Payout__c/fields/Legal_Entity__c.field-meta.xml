@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Legal_Entity__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
-    <externalId>false</externalId>
     <label>Legal Entity</label>
     <referenceTo>LegalEntity</referenceTo>
     <relationshipLabel>Stripe Payouts</relationshipLabel>

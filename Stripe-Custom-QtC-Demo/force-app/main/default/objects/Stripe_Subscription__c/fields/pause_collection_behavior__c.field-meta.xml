@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>pause_collection_behavior__c</fullName>
-    <externalId>false</externalId>
     <label>pause_collection.behavior</label>
     <required>false</required>
     <trackTrending>false</trackTrending>

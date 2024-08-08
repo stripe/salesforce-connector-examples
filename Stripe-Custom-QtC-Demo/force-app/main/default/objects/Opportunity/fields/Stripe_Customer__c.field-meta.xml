@@ -3,7 +3,6 @@
     <fullName>Stripe_Customer__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <description>stripe customer relationship</description>
-    <externalId>false</externalId>
     <label>Stripe Customer</label>
     <lookupFilter>
         <active>false</active>
