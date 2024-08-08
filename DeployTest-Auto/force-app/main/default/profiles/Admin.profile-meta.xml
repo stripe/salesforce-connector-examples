@@ -594,6 +594,18 @@
         <recordType>Account.Business_Account</recordType>
         true</visible>
     </recordTypeVisibilities>
+    <tabVisibilities>
+        <tab>Stripe_Checkout_Demo_Configuration</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Stripe_Payout__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Stripe_QtC_Demo_Configuration</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
     <!-- <tabVisibilities>
         <tab>Embedded_Checkout_Demo_Configuration</tab>
         <visibility>DefaultOn</visibility>
