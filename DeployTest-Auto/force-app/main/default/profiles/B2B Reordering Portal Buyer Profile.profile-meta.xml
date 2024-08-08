@@ -532,6 +532,14 @@
         <visible>false</visible>
     </recordTypeVisibilities>
     <tabVisibilities>
+        <tab>Embedded_Checkout_Demo_Configuration</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Stripe_Checkout_Demo_Configuration</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>Stripe_Payout__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
