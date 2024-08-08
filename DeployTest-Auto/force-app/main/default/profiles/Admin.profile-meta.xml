@@ -594,7 +594,7 @@
         <recordType>Account.Business_Account</recordType>
         true</visible>
     </recordTypeVisibilities>
-    <tabVisibilities>
+    <!-- <tabVisibilities>
         <tab>Embedded_Checkout_Demo_Configuration</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
@@ -610,6 +610,7 @@
         <tab>Stripe_QtC_Demo_Configuration</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
+    -->
     <tabVisibilities>
         <tab>standard-Opportunity</tab>
         <visibility>DefaultOn</visibility>
