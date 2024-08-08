@@ -1,7 +1,7 @@
 {
   "orgName": "Stripe Demos",
   "edition": "Developer",
-  "features": ["EnableSetPasswordInApi", "Individuals", "FinancialServicesCloud"],
+  "features": ["EnableSetPasswordInApi"],
   "settings": {
     "quoteSettings": {
       "enableQuote": true
