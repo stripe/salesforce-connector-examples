@@ -1,0 +1,61 @@
+<apex:page showHeader="false" sidebar="false" controller="StripeIntegrationController">
+    <style>
+        #payment-element {
+            max-width: 100%;
+        }
+        .stripe-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+
+    <div class="stripe-container">
+        <input type="text" id="clientSecret" value="{!clientSecret}" style="width: 100%;" placeholder="Enter Client Secret" />
+        <input type="text" id="stripePublicKey" value="{!stripePublicKey}" style="width: 100%;" placeholder="Enter Stripe Public Key" />
+        <button onclick="initializeStripe()" style="width: 100%;">Initialize Payment</button>
+    </div>
+
+    <div id="payment-element" style="width: 100%;"></div>
+    <button id="submit-button" style="display:none; width: 100%;">Submit Payment</button>
+
+    <script src="https://js.stripe.com/v3/"></script>
+    <script>
+        let stripe, elements, cardElement, clientSecret;
+
+        function initializeStripe() {
+            clientSecret = document.getElementById('clientSecret').value;
+            const stripePublicKey = document.getElementById('stripePublicKey').value;
+
+            if (!clientSecret) {
+                console.error('Client secret is not set.');
+                return;
+            }
+
+            if (!stripePublicKey) {
+                console.error('Stripe public key is not set.');
+                return;
+            }
+
+            stripe = Stripe(stripePublicKey);
+            elements = stripe.elements();
+            cardElement = elements.create('card');
+            cardElement.mount('#payment-element');
+            document.getElementById('submit-button').style.display = 'block';
+        }
+
+        document.getElementById('submit-button').addEventListener('click', () => {
+            stripe.confirmCardPayment(clientSecret, {
+                payment_method: {
+                    card: cardElement,
+                }
+            }).then(result => {
+                if (result.error) {
+                    console.error(result.error.message);
+                } else {
+                    console.log('Payment successful!', result.paymentIntent);
+                }
+            });
+        });
+    </script>
+</apex:page>
