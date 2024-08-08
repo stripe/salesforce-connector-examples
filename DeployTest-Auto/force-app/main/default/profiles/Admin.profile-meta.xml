@@ -2,7 +2,7 @@
 <Profile xmlns="http://soap.sforce.com/2006/04/metadata">
     <applicationVisibilities>
         <application>standard__LightningBolt</application>
-        <default>false</default>
+        <default>true</default>
         <visible>true</visible>
     </applicationVisibilities>
     <classAccesses>
@@ -592,7 +592,7 @@
     <recordTypeVisibilities>
         <default>true</default>
         <recordType>Account.Business_Account</recordType>
-        <visible>true</visible>
+        true</visible>
     </recordTypeVisibilities>
     <tabVisibilities>
         <tab>Embedded_Checkout_Demo_Configuration</tab>
