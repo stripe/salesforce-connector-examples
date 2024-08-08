@@ -3,6 +3,7 @@
     <fullName>Email_Domain__c</fullName>
     <businessStatus>Active</businessStatus>
     <description>domain to search for matches</description>
+    <externalId>false</externalId>
     <label>Email Domain</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>

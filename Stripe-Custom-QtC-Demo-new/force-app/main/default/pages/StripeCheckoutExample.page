@@ -1,0 +1,199 @@
+<apex:page controller="StripeEmbeddedCheckoutController" showHeader="false" sidebar="false">
+    <style>
+        .shopping-cart {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .product {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .product img {
+            max-width: 100px;
+            margin-right: 20px;
+        }
+        .product-details {
+            flex-grow: 1;
+        }
+        .product-quantity {
+            display: flex;
+            align-items: center;
+        }
+        .product-quantity input {
+            width: 50px;
+            margin: 0 10px;
+            text-align: center;
+        }
+        .total-price {
+            text-align: right;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+
+    <apex:form id="checkoutForm">
+        <div class="shopping-cart">
+            <h2>Shopping Cart</h2>
+            <div id="products">
+                <div class="product" data-id="1">
+                    <img src="https://e7.pngegg.com/pngimages/826/253/png-clipart-t-shirt-polo-shirt-clothing-sleeve-black-t-shirt-black-crew-neck-t-shirt-tshirt-fashion-thumbnail.png" alt="Product 1" />
+                    <div class="product-details">
+                        <h3>Black Shirt</h3>
+                        <p>A Black Shirt</p>
+                        <div class="product-quantity">
+                            <button type="button" onclick="adjustQuantity(this, -1)">-</button>
+                            <input type="number" value="1" min="1" onchange="updateQuantity(this)" />
+                            <button type="button" onclick="adjustQuantity(this, 1)">+</button>
+                        </div>
+                        <p>$10.00</p>
+                    </div>
+                </div>
+                <div class="product" data-id="2">
+                    <img src="https://e7.pngegg.com/pngimages/3/819/png-clipart-printed-t-shirt-polo-shirt-clothing-t-shirt-tshirt-fashion-thumbnail.png" alt="Product 2" />
+                    <div class="product-details">
+                        <h3>Red Shirt</h3>
+                        <p>A Red Shirt</p>
+                        <div class="product-quantity">
+                            <button type="button" onclick="adjustQuantity(this, -1)">-</button>
+                            <input type="number" value="1" min="1" onchange="updateQuantity(this)" />
+                            <button type="button" onclick="adjustQuantity(this, 1)">+</button>
+                        </div>
+                        <p>$15.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="total-price" id="totalPrice">
+                Total: $25.00
+            </div>
+            <button class="submit-button" id="submitButton" type="button" onclick="createCheckoutSession()">Initialize Payment</button>
+        </div>
+
+        <div id="checkout"></div>
+        <div id="stripecheckoutdiv"></div>
+
+        <!-- Hidden text to store the client secret key -->
+        <apex:outputText id="clientSecret" value="{!clientSecKey}" style="display:none;" />
+
+        <!-- Define the actionFunction to call the PageReference method -->
+        <apex:actionFunction name="createSession" action="{!createStripeCheckoutSessionPage}" rerender="clientSecret, scriptContainer"
+                             oncomplete="handleSessionResponse()" status="status">
+            <apex:param name="lineItemsParam" value="" assignTo="{!lineItems}" />
+        </apex:actionFunction>
+
+        <!-- Output panel for the script tag -->
+        <apex:outputPanel id="scriptContainer">
+            <script>
+                let stripe;
+                let products = [
+                    { id: 1, name: 'Black Shirt', description: 'A Black Shirt', price: 1000, currency: 'usd', quantity: 1, image: ['https://e7.pngegg.com/pngimages/826/253/png-clipart-t-shirt-polo-shirt-clothing-sleeve-black-t-shirt-black-crew-neck-t-shirt-tshirt-fashion-thumbnail.png']},
+                    { id: 2, name: 'Red Shirt', description: 'A Red Shirt', price: 1500, currency: 'usd', quantity: 1, image: ['https://e7.pngegg.com/pngimages/3/819/png-clipart-printed-t-shirt-polo-shirt-clothing-t-shirt-tshirt-fashion-thumbnail.png'] }
+                ];
+
+                function adjustQuantity(button, change) {
+                    const input = button.parentNode.querySelector('input');
+                    let newValue = parseInt(input.value) + change;
+                    if (newValue < 1) newValue = 1;
+                    input.value = newValue;
+                    updateQuantity(input);
+                }
+
+                function updateQuantity(input) {
+                    const productDiv = input.closest('.product');
+                    const productId = parseInt(productDiv.getAttribute('data-id'));
+                    const product = products.find(p => p.id === productId);
+                    product.quantity = parseInt(input.value);
+                    updateTotalPrice();
+                }
+
+                function updateTotalPrice() {
+                    let total = 0;
+                    products.forEach(product => {
+                        total += product.price * product.quantity;
+                    });
+                    document.getElementById('totalPrice').innerText = 'Total: $' + (total / 100).toFixed(2);
+                }
+
+                function createCheckoutSession() {
+                    console.log('createCheckoutSession called');
+                    //const stripePublicKey = document.getElementById('stripePublicKey').value;
+                    //console.log('Stripe Public Key:', stripePublicKey);
+                    //const stripeAccountID = document.getElementById('{!$Component.checkoutForm.stripeAccountID}').value;
+                    //console.log('Stripe Account ID:', stripeAccountID);
+                    const lineItems = products.map(product => ({
+                        name: product.name,
+                        description: product.description,
+                        amount: product.price,
+                        itemcurrency: product.currency,
+                        quantity: product.quantity, 
+                        images: product.image
+                    }));
+
+                    console.log('Line Items:', JSON.stringify(lineItems));
+
+                    // Call the Apex action function to create session
+                    createSession(JSON.stringify(lineItems));
+                }
+
+                function handleSessionResponse() {
+                    console.log('handleSessionResponse called');
+                    const clientSecret = "{!clientSecKey}";
+                    console.log('Client Secret Key:', clientSecret);
+
+                    if (!clientSecret) {
+                        console.error('Client secret is not set.');
+                        return;
+                    }
+
+                    // Initialize Stripe.js with the public key
+                    // = document.getElementById('stripePublicKey').value;
+                    //console.log('Initializing Stripe.js with Public Key:', stripePublicKey);
+
+                    try {
+                        stripe = Stripe("{!publishableKey}");
+                        console.log('Stripe initialized successfully');
+                    } catch (error) {
+                        console.log('Error initializing Stripe:', error);
+                        return;
+                    }
+
+                    // Initialize the embedded checkout using fetchClientSecret
+                    const fetchClientSecret = async () => {
+                        console.log('fetchClientSecret called');
+                        return clientSecret;
+                    };
+
+                    stripe.initEmbeddedCheckout({
+                        fetchClientSecret,
+                    }).then(checkout => {
+                        console.log('Embedded Checkout initialized successfully');
+                        // Make the checkout div visible
+                        document.getElementById('checkout').style.display = 'block';
+                        // Mount Checkout
+                        checkout.mount('#stripecheckoutdiv');
+                        console.log('Checkout mounted successfully');
+                    }).catch(error => {
+                        console.log('Error initializing embedded checkout:', error);
+                    });
+                }
+
+                document.addEventListener('DOMContentLoaded', () => {
+                    console.log('Document loaded, setting up Stripe.js');
+                    const stripeScript = document.createElement('script');
+                    stripeScript.src = "https://js.stripe.com/v3/";
+                    stripeScript.onload = () => {
+                        console.log('Stripe.js loaded');
+                    };
+                    stripeScript.onerror = (error) => {
+                        console.log('Error loading Stripe.js:', error);
+                    };
+                    document.head.appendChild(stripeScript);
+                });
+            </script>
+        </apex:outputPanel>
+    </apex:form>
+</apex:page>

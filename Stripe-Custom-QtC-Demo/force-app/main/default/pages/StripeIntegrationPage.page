@@ -24,7 +24,7 @@
         }
     </style>
 
-    <apex:form >
+    <apex:form>
         <div class="stripe-container">
             <apex:inputHidden id="clientSecret" value="{!clientSecret}" />
             <apex:commandButton value="Initialize Payment" onclick="initializeStripe(); return false;" style="width: 100%;" />

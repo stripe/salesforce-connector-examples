@@ -2,6 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Opportunity_Amendment__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
     <label>Opportunity Amendment</label>
     <referenceTo>Opportunity</referenceTo>
     <relationshipLabel>Opportunities</relationshipLabel>
