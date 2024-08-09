@@ -1,0 +1,8 @@
+<template>
+    <lightning-card title="Payment">
+        <lightning-input label="Client Secret" value={clientSecret} onchange={handleClientSecretChange}></lightning-input>
+        <lightning-button label="Initialize Payment" onclick={initializeStripe}></lightning-button>
+        <div id="payment-element"></div>
+        <lightning-button label="Submit Payment" onclick={handleSubmit} style="display:none;" id="submit-button"></lightning-button>
+    </lightning-card>
+</template>

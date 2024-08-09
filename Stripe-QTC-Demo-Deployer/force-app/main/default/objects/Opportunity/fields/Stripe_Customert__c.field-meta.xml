@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stripe_Customert__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Stripe Customert</label>
+    <referenceTo>Stripe_Customer__c</referenceTo>
+    <relationshipLabel>Opportunities (Stripe Customert)</relationshipLabel>
+    <relationshipName>Opportunities1</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

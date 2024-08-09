@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Publishable_key__c</fullName>
+    <description>Publishable key of the Stripe Account for use in Checkout and payments</description>
+    <inlineHelpText>Publishable key of the Stripe Account</inlineHelpText>
+    <label>Publishable key</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>
