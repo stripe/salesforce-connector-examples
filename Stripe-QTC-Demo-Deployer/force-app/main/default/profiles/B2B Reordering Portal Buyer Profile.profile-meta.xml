@@ -675,10 +675,6 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
-        <tab>standard-PricebookEntry</tab>
-        <visibility>DefaultOn</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
         <tab>standard-Quote</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
