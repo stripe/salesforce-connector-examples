@@ -1,0 +1,19 @@
+<aura:component controller="StripePaymentController" implements="forceCommunity:availableForAllPageTypes" access="global">
+    <aura:attribute name="clientSecret" type="String"/>
+    <aura:attribute name="publishablekey" type="String"/>
+    <aura:attribute name="showPaymentElement" type="Boolean" default="false"/>
+    <aura:attribute name="stripe" type="Object"/>
+    <aura:attribute name="elements" type="Object"/>
+    <aura:attribute name="paymentElement" type="Object"/>
+    <!-- Include StripeJS -->
+    <ltng:require scripts="https://js.stripe.com/v3/" afterScriptsLoaded="{!c.scriptLoaded}" />
+    <div class="payment-form">
+        <aura:if isTrue="{!v.showPaymentElement}">
+            <div id="payment-element">
+                <!-- Stripe Elements will go here -->
+            </div>
+            <lightning:button variant="brand" label="Pay now" onclick="{!c.handleSubmit}" />
+        </aura:if>
+        <div aura:id="payment-message" class="hidden"></div>
+    </div>
+</aura:component>
