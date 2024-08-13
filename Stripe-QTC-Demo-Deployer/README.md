@@ -1,18 +1,19 @@
-# Salesforce DX Project: Next Steps
+# Deployment
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+To Deploy this Example
 
-## How Do You Plan to Deploy Your Changes?
+- Clone the Repo
+`git clone https://github.com/stripe/salesforce-connector-examples.git`
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+- Open salesforce-connector-examples Directory
+`cd salesforce-connector-examples`
 
-## Configure Your Salesforce DX Project
+- Create a scratch ORG using the the 
+`sf org create scratch -e developer -m -y 10 -a <Your_Alias> --target-dev-hub <Your_Dev_Hub> -f stripe-project.json`
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+- Install The Stripe for Salesforce Platform Connector
+[Install Guide](https://docs.stripe.com/plugins/stripe-connector-for-salesforce/installation-guide)
 
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+- Deploy the Demo Solution
+`cd Stripe-QTC-Demo-Deployer`
+`sf project deploy start --target-org <Your_Org>`
