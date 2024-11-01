@@ -12,10 +12,6 @@
     "mobileSettings": {
       "enableS1EncryptedStoragePref2": false
     },
-    "orgPreferenceSettings": {
-      "s1DesktopEnabled": true,
-      "selfSetPasswordInApi": true
-    },
     "communitiesSettings": {
       "enableNetworksEnabled": true,
       "enableCommunityWorkspaces": true
