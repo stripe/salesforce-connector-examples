@@ -48,5 +48,5 @@
 * Added support for event retry with backoff mechanism to Stripe API callouts to overcome lock_timeout errors
 * Update reference to use PACKAGE_VERSION instead of Publisher
 
-###v1.11
+### v1.11
 * Add support for Stripe Connect
