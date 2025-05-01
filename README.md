@@ -41,7 +41,7 @@ Here's how to navigate the identified limitations:
         * **Considerations:** This approach offers granular control over data access and operations but requires Apex development and rigorous security considerations.
 
     * **Data Cloning:**
-        * **Implementation:** For scenarios involving displaying Stripe-related information, consider cloning essential data from the Stripe app's protected objects into custom Salesforce objects accessible by your Experience Cloud users (including those with "Community Plus" licenses).
+        * **Implementation:** For scenarios involving displaying Stripe-related information, consider cloning essential data from the Stripe app's protected objects into custom Salesforce objects accessible by your Experience Cloud users.
         * **Apex Query Adjustment:** Modify your Apex code within LWCs or controllers to query these newly created custom objects instead of the original, restricted Stripe app objects.
         * **Considerations:** This method involves data duplication and requires mechanisms to keep the cloned data synchronized with the original Stripe app data. Evaluate the volume and frequency of data changes to determine its feasibility.
 
