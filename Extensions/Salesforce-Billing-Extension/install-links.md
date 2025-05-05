@@ -8,3 +8,6 @@ https://login.salesforce.com/packaging/installPackage.apexp?p0=04tRN000003NzNdYA
 
 ### Gateway Type picklist: ### 
 ```Stripe (Universal Extension)```
+
+### Payment Gateway Value: ###
+Please ensure the "Payment Gateway value" matches the same as listed under ```Billing Settings``` in the configuration UI of Stripe app for Salesforce
