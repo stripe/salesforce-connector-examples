@@ -1,3 +1,7 @@
+### v1.25
+* Potential errors are now logged asynchronously using platform events to avoid failures during multiple callout scenario in a single SF transaction
+* Minor fixes in the  API Version Settings tab
+
 ### v1.24
 * Update and refactor to make encrypt utilities global
 
