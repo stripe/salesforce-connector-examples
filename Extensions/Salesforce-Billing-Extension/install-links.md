@@ -18,3 +18,6 @@ Please ensure the "Payment Gateway value" matches the same as listed under ```Bi
 - This unmanaged package includes support for Stripe's (beta) Surcharging API. To use the surcharging calculation functionality:
   - Ensure your Stripe account is gated for the Surcharging API.
   - Follow the instructions in the provided PDF for setting up the surcharging flow.
+
+
+[Install and Config Salesforce Platform and Billing Extension.pdf](https://github.com/user-attachments/files/20785141/Install.and.Config.Salesforce.Platform.and.Billing.Extension.pdf)
