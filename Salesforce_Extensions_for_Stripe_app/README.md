@@ -11,6 +11,8 @@ Salesforce extensions are particularly valuable for apps like the [Stripe app fo
 
 ## Current Supported Extensions
 
+These are some of the supporting extensions built and powered by Stripe app for Salesforce Platform
+
 | Extensions    | Description |
 | -------- | ------- |
 | Salesforce Billing Extension| Provides support for ACH and credit card payments through Salesforce Billing and Payment Center|
