@@ -1,6 +1,6 @@
-A Salesforce extension is a separate package that adds functionality to an existing managed package. Think of it as an add-on to your core application that provides additional features or customizations without modifying the original package.  This allows for a modular approach to development and deployment.
+A Salesforce extension is a separate package that enhances the functionality of an existing managed package. It adds features or customizations without altering the original package, enabling a modular approach to development and deployment.
 
-## Why to use Extensions
+## Why use Extensions?
 Salesforce extensions are particularly valuable for apps like the [Stripe app for Salesforce platform](https://appexchange.salesforce.com/appxListingDetail?listingId=4dff0f8e-0b10-47c2-a3a3-f3905e7f7927&tab=r) because they:
 
 * **Provide Flexibility:** Allow for customization of the Stripe Connector to fit specific business needs without altering the core, managed package.  This ensures that the core functionality remains stable and upgradeable.
@@ -11,7 +11,7 @@ Salesforce extensions are particularly valuable for apps like the [Stripe app fo
 
 ## Current Supported Extensions
 
-These are some of the supporting extensions built and powered by Stripe app for Salesforce Platform
+The following are supporting extensions built and powered by the Stripe app for Salesforce Platform:
 
 | Extensions    | Description |
 | -------- | ------- |
