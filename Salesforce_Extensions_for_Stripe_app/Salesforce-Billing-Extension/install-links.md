@@ -6,6 +6,8 @@ https://test.salesforce.com/packaging/installPackage.apexp?p0=04tRN000003NzNdYAK
 ```v1.1.0```
 https://login.salesforce.com/packaging/installPackage.apexp?p0=04tRN000003NzNdYAK
 
+Stripe Docs: [Click Here](https://docs.stripe.com/connectors/salesforce-billing-extension)
+
 ### Gateway Type picklist: ### 
 ```Stripe (Universal Extension)```
 
