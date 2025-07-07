@@ -1,3 +1,7 @@
+### v1.26
+* Accept connected account names longer than 80 characters
+* Upgraded Salesforce metadata to API version 63.0
+  
 ### v1.25
 * Potential errors are now logged asynchronously using platform events to avoid failures during multiple callout scenario in a single SF transaction
 * Minor fixes in the  API Version Settings tab
