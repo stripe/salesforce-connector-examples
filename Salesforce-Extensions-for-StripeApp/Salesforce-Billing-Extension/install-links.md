@@ -1,10 +1,10 @@
 ## Test ## 
-```v1.2.0```
-https://test.salesforce.com/packaging/installPackage.apexp?p0=04tRN000005VfIXYA0
+```v1.3.0```
+https://test.salesforce.com/packaging/installPackage.apexp?p0=04tRN000005yeCbYAI
 
 ## Production ## 
-```v1.2.0```
-https://login.salesforce.com/packaging/installPackage.apexp?p0=04tRN000005VfIXYA0
+```v1.3.0```
+https://login.salesforce.com/packaging/installPackage.apexp?p0=04tRN000005yeCbYAI
 
 Stripe Docs: [Click Here](https://docs.stripe.com/connectors/salesforce-billing-extension)
 
