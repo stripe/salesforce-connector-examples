@@ -1,3 +1,18 @@
+### v2.3.0(beta)
+* Added the ability to enable toggles for events when activating real-time sync
+* Corrected the condition for displaying the “Enabled Webhooks” badge. Fixed rendering of the “Not Configured” status in the Webhook Settings table after endpoint removal
+* For configurations using Sync Type = ‘Real Time’, when a DUPLICATE_VALUE or UNABLE_TO_LOCK_ROW exception occurs during a synchronous webhook transaction, an asynchronous Queueable job is now enqueued to retry the operation.
+* Only one Queueable is enqueued per transaction to ensure compliance with Salesforce governor limits and to minimize performance impact
+
+### v2.2.0
+Introducing 2 new sections in the administration console:
+* About section – keep track of connector versions and release notes
+* Extensions section - manage Stripe extensions integrated with Salesforce
+
+### v2.1.0
+* Sync Billing data between connected Stripe accounts and Salesforce org
+* Scheduled jobs for automated synchronization of Stripe Billing data, along with a new Salesforce app Stripe Billing Data containing dedicated custom objects
+  
 ### v1.26
 * Accept connected account names longer than 80 characters
 * Upgraded Salesforce metadata to API version 63.0
