@@ -1,12 +1,12 @@
 ## Test ## 
-```v1.3.0```
-https://test.salesforce.com/packaging/installPackage.apexp?p0=04tRN000005yeCbYAI
+```v1.4.0```
+https://test.salesforce.com/packaging/installPackage.apexp?p0=04tRN000007JYzdYAG
 
 ## Production ## 
-```v1.3.0```
-https://login.salesforce.com/packaging/installPackage.apexp?p0=04tRN000005yeCbYAI
+```v1.4.0```
+https://login.salesforce.com/packaging/installPackage.apexp?p0=04tRN000007JYzdYAG
 
-Stripe Docs: [Click Here](https://docs.stripe.com/connectors/salesforce-billing-extension)
+Stripe Docs: [Click Here](https://docs.stripe.com/use-stripe-apps/salesforce-billing-extension)
 
 ### Gateway Type picklist: ### 
 ```Stripe (Universal Extension)```
