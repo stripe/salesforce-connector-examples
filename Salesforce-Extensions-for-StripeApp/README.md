@@ -9,13 +9,14 @@ Salesforce extensions are particularly valuable for apps like the [Stripe app fo
 * **Promote Modularity:** Encourage a more organized and maintainable Salesforce environment.  Functionality is broken down into logical units, making it easier to manage and troubleshoot.
 * **Extend without Bloating:** Prevent the core Stripe app managed package from becoming bloated with niche features. Extension allows you to install only the functionality they need.
 
-## Current Supported Extensions
+## Current Supported [Extensions](https://docs.stripe.com/use-stripe-apps/stripe-app-for-salesforce/overview#extensions)
 
 The following are supporting extensions built and powered by the Stripe app for Salesforce Platform:
 
 | Extensions    | Description |
 | -------- | ------- |
-| Salesforce Billing Extension| Provides support for ACH and credit card payments through Salesforce Billing and Payment Center|
+| Salesforce Billing (legacy) Extension| Provides support for ACH and credit card payments through Salesforce Billing and Payment Center|
+|Stripe Billing Flows|Enables you to automate subscription schedule creation based on Salesforce Order activation using out-of-the-box flows|
 |Stripe API v2022 Extension| Enables invocables and access to Stripe API in SF Flow Builder and Apex|
 |Stripe API v2025 Extension| Enables invocables and access to Stripe API in SF Flow Builder and Apex|
 
