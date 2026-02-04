@@ -1,4 +1,9 @@
-## Test ## 
+
+## Manage your extensions directly from the app ##
+<img width="1463" height="451" alt="Screenshot 2026-02-04 at 1 27 54 PM" src="https://github.com/user-attachments/assets/9aa1840c-ad78-4f73-96d9-2681da1fd972" />
+
+## Test ##
+
 ```v1.4.0```
 https://test.salesforce.com/packaging/installPackage.apexp?p0=04tRN000007JYzdYAG
 
