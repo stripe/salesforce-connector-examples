@@ -17,4 +17,5 @@ The following are supporting extensions built and powered by the Stripe app for 
 | -------- | ------- |
 | Salesforce Billing Extension| Provides support for ACH and credit card payments through Salesforce Billing and Payment Center|
 |Stripe API v2022 Extension| Enables invocables and access to Stripe API in SF Flow Builder and Apex|
+|Stripe API v2025 Extension| Enables invocables and access to Stripe API in SF Flow Builder and Apex|
 
