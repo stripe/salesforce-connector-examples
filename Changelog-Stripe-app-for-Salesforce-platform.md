@@ -1,8 +1,18 @@
-### v2.3.0(beta)
-* Added the ability to enable toggles for events when activating real-time sync
-* Corrected the condition for displaying the “Enabled Webhooks” badge. Fixed rendering of the “Not Configured” status in the Webhook Settings table after endpoint removal
-* For configurations using Sync Type = ‘Real Time’, when a DUPLICATE_VALUE or UNABLE_TO_LOCK_ROW exception occurs during a synchronous webhook transaction, an asynchronous Queueable job is now enqueued to retry the operation.
-* Only one Queueable is enqueued per transaction to ensure compliance with Salesforce governor limits and to minimize performance impact
+### v2.6.0
+* Upgraded the Connected App (CA) used to receive webhook events to an External Client App (ECA)
+* When subscribing to webhook events, the 'Events on connected accounts' column hides automatically if the Stripe account has no connected accounts. This avoids creating unnecessary webhook endpoints in your Stripe account
+
+### v2.5.0
+* Not a release candidate
+
+### v2.4.0
+* Resolved an issue that was preventing the deletion of a webhook endpoint in Salesforce when it was previously deleted in Stripe
+* Fixed the initial state of the 'Toggle all' button when updating the list of webhook events subscribed to for Real-Time Stripe Billing Sync
+* Renamed 'Billing Sync Settings' to 'Stripe Billing Sync' under Account Management
+
+### v2.3.0
+* Added the ability to update the list of webhook events subscribed to for Real Time Stripe Billing Sync
+* During Real-Time Stripe Billing Sync, if a DUPLICATE_VALUE or UNABLE_TO_LOCK_ROW exception occurs during synchronous webhook event processing, an asynchronous Queueable job will be enqueued to retry the operation. Note: Only one Queueable is enqueued per transaction to ensure compliance with Salesforce governor limits and minimize performance impact
 
 ### v2.2.0
 Introducing 2 new sections in the administration console:
