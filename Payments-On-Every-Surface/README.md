@@ -40,7 +40,7 @@ cd Payments-On-Every-Surface
 
 3. Deploy the project to your salesforce org:
 ```sh
-sf project retrieve start --target-org <YOUR_ORG>
+sf project deploy start --target-org <YOUR_ORG>
 ```
 
 ## Author(s)
