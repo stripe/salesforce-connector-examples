@@ -5,7 +5,7 @@
         <label>Create Needed Coupon</label>
         <locationX>50</locationX>
         <locationY>950</locationY>
-        <actionName>stripeGC__v01_CreateCoupons</actionName>
+        <actionName>stripeGC__v02_CreateCoupons</actionName>
         <actionType>apex</actionType>
         <connector>
             <targetReference>SetCouponID_from_Create</targetReference>
@@ -29,7 +29,7 @@
                 <elementReference>PercentOffNumber</elementReference>
             </value>
         </inputParameters>
-        <nameSegment>stripeGC__v01_CreateCoupons</nameSegment>
+        <nameSegment>stripeGC__v02_CreateCoupons</nameSegment>
         <storeOutputAutomatically>true</storeOutputAutomatically>
         <versionSegment>1</versionSegment>
     </actionCalls>
@@ -38,7 +38,7 @@
         <label>Get Stripe Coupons</label>
         <locationX>182</locationX>
         <locationY>242</locationY>
-        <actionName>stripeGC__v01_ListCoupons</actionName>
+        <actionName>stripeGC__v02_ListCoupons</actionName>
         <actionType>apex</actionType>
         <connector>
             <targetReference>Look_For_Coupon</targetReference>
@@ -56,7 +56,7 @@
                 <numberValue>100.0</numberValue>
             </value>
         </inputParameters>
-        <nameSegment>stripeGC__v01_ListCoupons</nameSegment>
+        <nameSegment>stripeGC__v02_ListCoupons</nameSegment>
         <storeOutputAutomatically>true</storeOutputAutomatically>
         <versionSegment>1</versionSegment>
     </actionCalls>

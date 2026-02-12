@@ -5,7 +5,7 @@
         <label>Cast To product</label>
         <locationX>314</locationX>
         <locationY>323</locationY>
-        <actionName>stripeGC__v01_CastProduct</actionName>
+        <actionName>stripeGC__v02_CastProduct</actionName>
         <actionType>apex</actionType>
         <connector>
             <targetReference>Get_Stripe_Product</targetReference>
@@ -17,7 +17,7 @@
                 <elementReference>$Record.stripeGC__Request_Body__c</elementReference>
             </value>
         </inputParameters>
-        <nameSegment>stripeGC__v01_CastProduct</nameSegment>
+        <nameSegment>stripeGC__v02_CastProduct</nameSegment>
         <storeOutputAutomatically>true</storeOutputAutomatically>
         <versionSegment>1</versionSegment>
     </actionCalls>

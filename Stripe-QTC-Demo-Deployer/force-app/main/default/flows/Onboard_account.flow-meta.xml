@@ -5,7 +5,7 @@
         <label>create account</label>
         <locationX>176</locationX>
         <locationY>458</locationY>
-        <actionName>stripeGC__v01_CreateAccounts</actionName>
+        <actionName>stripeGC__v02_CreateAccounts</actionName>
         <actionType>apex</actionType>
         <connector>
             <targetReference>Create_account_Link</targetReference>
@@ -47,7 +47,7 @@
                 <stringValue>express</stringValue>
             </value>
         </inputParameters>
-        <nameSegment>stripeGC__v01_CreateAccounts</nameSegment>
+        <nameSegment>stripeGC__v02_CreateAccounts</nameSegment>
         <storeOutputAutomatically>true</storeOutputAutomatically>
         <versionSegment>1</versionSegment>
     </actionCalls>
@@ -56,7 +56,7 @@
         <label>Create account Link</label>
         <locationX>176</locationX>
         <locationY>566</locationY>
-        <actionName>stripeGC__v01_CreateAccountLinks</actionName>
+        <actionName>stripeGC__v02_CreateAccountLinks</actionName>
         <actionType>apex</actionType>
         <connector>
             <targetReference>Create_Legal_Entity</targetReference>
@@ -98,7 +98,7 @@
                 <stringValue>account_onboarding</stringValue>
             </value>
         </inputParameters>
-        <nameSegment>stripeGC__v01_CreateAccountLinks</nameSegment>
+        <nameSegment>stripeGC__v02_CreateAccountLinks</nameSegment>
         <storeOutputAutomatically>true</storeOutputAutomatically>
         <versionSegment>1</versionSegment>
     </actionCalls>

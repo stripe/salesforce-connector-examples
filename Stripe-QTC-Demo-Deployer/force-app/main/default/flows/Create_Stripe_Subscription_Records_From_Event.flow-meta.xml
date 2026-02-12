@@ -5,7 +5,7 @@
         <label>Stripe Subscription</label>
         <locationX>484</locationX>
         <locationY>276</locationY>
-        <actionName>stripeGC__v01_CastSubscription</actionName>
+        <actionName>stripeGC__v02_CastSubscription</actionName>
         <actionType>apex</actionType>
         <connector>
             <targetReference>Metadata_Array</targetReference>
@@ -17,7 +17,7 @@
                 <elementReference>$Record.stripeGC__Request_Body__c</elementReference>
             </value>
         </inputParameters>
-        <nameSegment>stripeGC__v01_CastSubscription</nameSegment>
+        <nameSegment>stripeGC__v02_CastSubscription</nameSegment>
         <storeOutputAutomatically>true</storeOutputAutomatically>
         <versionSegment>1</versionSegment>
     </actionCalls>

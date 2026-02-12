@@ -44,7 +44,7 @@
         <label>SubSchedule</label>
         <locationX>770</locationX>
         <locationY>2064</locationY>
-        <actionName>stripeGC__v01_CastSubscriptionSchedule</actionName>
+        <actionName>stripeGC__v02_CastSubscriptionSchedule</actionName>
         <actionType>apex</actionType>
         <connector>
             <targetReference>Update_Opportunity</targetReference>
@@ -56,7 +56,7 @@
                 <elementReference>SubScheduleID</elementReference>
             </value>
         </inputParameters>
-        <nameSegment>stripeGC__v01_CastSubscriptionSchedule</nameSegment>
+        <nameSegment>stripeGC__v02_CastSubscriptionSchedule</nameSegment>
         <storeOutputAutomatically>true</storeOutputAutomatically>
         <versionSegment>1</versionSegment>
     </actionCalls>
