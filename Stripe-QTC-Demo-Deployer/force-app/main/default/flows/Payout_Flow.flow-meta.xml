@@ -5,7 +5,7 @@
         <label>CreateTransfer</label>
         <locationX>308</locationX>
         <locationY>276</locationY>
-        <actionName>stripeGC__v01_CreateTransfers</actionName>
+        <actionName>stripeGC__v02_CreateTransfers</actionName>
         <actionType>apex</actionType>
         <connector>
             <targetReference>Update_Payout</targetReference>
@@ -35,7 +35,7 @@
                 <stringValue>usd</stringValue>
             </value>
         </inputParameters>
-        <nameSegment>stripeGC__v01_CreateTransfers</nameSegment>
+        <nameSegment>stripeGC__v02_CreateTransfers</nameSegment>
         <storeOutputAutomatically>true</storeOutputAutomatically>
         <versionSegment>1</versionSegment>
     </actionCalls>

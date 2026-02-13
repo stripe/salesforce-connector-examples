@@ -5,7 +5,7 @@
         <label>Stripe Invoice</label>
         <locationX>176</locationX>
         <locationY>323</locationY>
-        <actionName>stripeGC__v01_CastInvoice</actionName>
+        <actionName>stripeGC__v02_CastInvoice</actionName>
         <actionType>apex</actionType>
         <connector>
             <targetReference>get_invoice</targetReference>
@@ -17,7 +17,7 @@
                 <elementReference>$Record.stripeGC__Request_Body__c</elementReference>
             </value>
         </inputParameters>
-        <nameSegment>stripeGC__v01_CastInvoice</nameSegment>
+        <nameSegment>stripeGC__v02_CastInvoice</nameSegment>
         <storeOutputAutomatically>true</storeOutputAutomatically>
         <versionSegment>1</versionSegment>
     </actionCalls>

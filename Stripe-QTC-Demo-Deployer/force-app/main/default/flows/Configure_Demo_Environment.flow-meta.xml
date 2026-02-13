@@ -5,7 +5,7 @@
         <label>Create Stripe Product and Price for One Time Item</label>
         <locationX>50</locationX>
         <locationY>1538</locationY>
-        <actionName>stripeGC__v01_CreateProducts</actionName>
+        <actionName>stripeGC__v02_CreateProducts</actionName>
         <actionType>apex</actionType>
         <connector>
             <targetReference>Copy_2_of_Create_Product</targetReference>
@@ -41,7 +41,7 @@
                 <stringValue>One Time Item</stringValue>
             </value>
         </inputParameters>
-        <nameSegment>stripeGC__v01_CreateProducts</nameSegment>
+        <nameSegment>stripeGC__v02_CreateProducts</nameSegment>
         <storeOutputAutomatically>true</storeOutputAutomatically>
         <versionSegment>1</versionSegment>
     </actionCalls>
@@ -51,7 +51,7 @@
         <label>Create Monthly User Support</label>
         <locationX>50</locationX>
         <locationY>998</locationY>
-        <actionName>stripeGC__v01_CreateProducts</actionName>
+        <actionName>stripeGC__v02_CreateProducts</actionName>
         <actionType>apex</actionType>
         <connector>
             <targetReference>Create_Product</targetReference>
@@ -87,7 +87,7 @@
                 <stringValue>Monthly User Support</stringValue>
             </value>
         </inputParameters>
-        <nameSegment>stripeGC__v01_CreateProducts</nameSegment>
+        <nameSegment>stripeGC__v02_CreateProducts</nameSegment>
         <storeOutputAutomatically>true</storeOutputAutomatically>
         <versionSegment>1</versionSegment>
     </actionCalls>
@@ -96,7 +96,7 @@
         <label>Create Stripe Product and Price for Gold Subscription</label>
         <locationX>50</locationX>
         <locationY>2078</locationY>
-        <actionName>stripeGC__v01_CreateProducts</actionName>
+        <actionName>stripeGC__v02_CreateProducts</actionName>
         <actionType>apex</actionType>
         <connector>
             <targetReference>Create_Gold_Subscription_in_Salesforce</targetReference>
@@ -132,7 +132,7 @@
                 <stringValue>Gold Subscription</stringValue>
             </value>
         </inputParameters>
-        <nameSegment>stripeGC__v01_CreateProducts</nameSegment>
+        <nameSegment>stripeGC__v02_CreateProducts</nameSegment>
         <storeOutputAutomatically>true</storeOutputAutomatically>
         <versionSegment>1</versionSegment>
     </actionCalls>
@@ -960,30 +960,33 @@
         <isInput>false</isInput>
         <isOutput>false</isOutput>
     </variables>
-    <variables>
-        <name>PriceDataThree</name>
-        <apexClass>stripeGC__CreateProductsReqDefaultPriceData</apexClass>
-        <dataType>Apex</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-    </variables>
-    <variables>
-        <name>Product_Price_Data</name>
-        <apexClass>stripeGC__CreateProductsReqDefaultPriceData</apexClass>
-        <dataType>Apex</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-    </variables>
-    <variables>
-        <name>Product_Price_Data_2</name>
-        <apexClass>stripeGC__CreateProductsReqDefaultPriceData</apexClass>
-        <dataType>Apex</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-    </variables>
+ <variables>
+  <name>PriceDataThree</name>
+  <apexClass>stripeGC__v02_CreateProductsReqDefaultPriceData</apexClass>
+  <dataType>Apex</dataType>
+  <isCollection>false</isCollection>
+  <isInput>false</isInput>
+  <isOutput>false</isOutput>
+</variables>
+
+<variables>
+  <name>Product_Price_Data</name>
+  <apexClass>stripeGC__v02_CreateProductsReqDefaultPriceData</apexClass>
+  <dataType>Apex</dataType>
+  <isCollection>false</isCollection>
+  <isInput>false</isInput>
+  <isOutput>false</isOutput>
+</variables>
+
+<variables>
+  <name>Product_Price_Data_2</name>
+  <apexClass>stripeGC__v02_CreateProductsReqDefaultPriceData</apexClass>
+  <dataType>Apex</dataType>
+  <isCollection>false</isCollection>
+  <isInput>false</isInput>
+  <isOutput>false</isOutput>
+</variables>
+
     <variables>
         <name>ProductID</name>
         <dataType>String</dataType>

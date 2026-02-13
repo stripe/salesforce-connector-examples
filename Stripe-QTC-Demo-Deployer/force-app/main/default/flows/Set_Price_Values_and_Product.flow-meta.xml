@@ -5,7 +5,7 @@
         <label>Get Price</label>
         <locationX>418</locationX>
         <locationY>276</locationY>
-        <actionName>stripeGC__v01_GetPrices</actionName>
+        <actionName>stripeGC__v02_GetPrices</actionName>
         <actionType>apex</actionType>
         <connector>
             <targetReference>Get_Product</targetReference>
@@ -23,7 +23,7 @@
                 <elementReference>$Record.Stripe_ID__c</elementReference>
             </value>
         </inputParameters>
-        <nameSegment>stripeGC__v01_GetPrices</nameSegment>
+        <nameSegment>stripeGC__v02_GetPrices</nameSegment>
         <storeOutputAutomatically>true</storeOutputAutomatically>
         <versionSegment>1</versionSegment>
     </actionCalls>
@@ -32,7 +32,7 @@
         <label>Get Product</label>
         <locationX>418</locationX>
         <locationY>384</locationY>
-        <actionName>stripeGC__v01_GetProducts</actionName>
+        <actionName>stripeGC__v02_GetProducts</actionName>
         <actionType>apex</actionType>
         <connector>
             <targetReference>Get_Stripe_Product_Record</targetReference>
@@ -50,7 +50,7 @@
                 <elementReference>Get_Price.product</elementReference>
             </value>
         </inputParameters>
-        <nameSegment>stripeGC__v01_GetProducts</nameSegment>
+        <nameSegment>stripeGC__v02_GetProducts</nameSegment>
         <storeOutputAutomatically>true</storeOutputAutomatically>
         <versionSegment>1</versionSegment>
     </actionCalls>
