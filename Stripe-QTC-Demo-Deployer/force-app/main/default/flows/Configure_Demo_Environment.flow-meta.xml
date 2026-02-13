@@ -960,30 +960,33 @@
         <isInput>false</isInput>
         <isOutput>false</isOutput>
     </variables>
-    <variables>
-        <name>PriceDataThree</name>
-        <apexClass>stripeGC__CreateProductsReqDefaultPriceData</apexClass>
-        <dataType>Apex</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-    </variables>
-    <variables>
-        <name>Product_Price_Data</name>
-        <apexClass>stripeGC__CreateProductsReqDefaultPriceData</apexClass>
-        <dataType>Apex</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-    </variables>
-    <variables>
-        <name>Product_Price_Data_2</name>
-        <apexClass>stripeGC__CreateProductsReqDefaultPriceData</apexClass>
-        <dataType>Apex</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-    </variables>
+ <variables>
+  <name>PriceDataThree</name>
+  <apexClass>stripeGC__v02_CreateProductsReqDefaultPriceData</apexClass>
+  <dataType>Apex</dataType>
+  <isCollection>false</isCollection>
+  <isInput>false</isInput>
+  <isOutput>false</isOutput>
+</variables>
+
+<variables>
+  <name>Product_Price_Data</name>
+  <apexClass>stripeGC__v02_CreateProductsReqDefaultPriceData</apexClass>
+  <dataType>Apex</dataType>
+  <isCollection>false</isCollection>
+  <isInput>false</isInput>
+  <isOutput>false</isOutput>
+</variables>
+
+<variables>
+  <name>Product_Price_Data_2</name>
+  <apexClass>stripeGC__v02_CreateProductsReqDefaultPriceData</apexClass>
+  <dataType>Apex</dataType>
+  <isCollection>false</isCollection>
+  <isInput>false</isInput>
+  <isOutput>false</isOutput>
+</variables>
+
     <variables>
         <name>ProductID</name>
         <dataType>String</dataType>
